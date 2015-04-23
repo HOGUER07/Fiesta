@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="1"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/inicio" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:inputType="text"
+        android:id="@+id/edNombre"
+        android:hint="@string/Nombre"
+        android:textColor="#ffff10c8"
+        android:clickable="true"
+        android:layout_weight="0.04"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:inputType="phone"
+        android:id="@+id/edCumpleaños"
+        android:hint="@string/Cumpleaños"
+        android:textColor="#ffff10c8"
+        android:textStyle="italic"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btInsertar"
+            android:text="@string/btInsertar"
+            android:textColor="#ff2d0cff"
+            android:background="#ffff46cc"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btVer"
+            android:id="@+id/btVer"
+            android:textColor="#ff2d0cff"
+            android:background="#ffffdae3"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edBuscar"
+            android:hint="@string/buscar"
+            android:textColor="#ffff21c9"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/buscar"
+            android:id="@+id/btBuscar"
+            android:textColor="#ff4331ff"
+            android:background="#ffffdae3"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/editar"
+            android:id="@+id/btEditar"
+            android:textColor="#FF4331FF"
+            android:background="#ffff2ed7"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/eliminar"
+            android:id="@+id/btEliminar"
+            android:textColor="#FF4331FF"
+            android:background="#ffffdae3"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
